@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "GodotBullet",
+"language": "GDScript",
+"path": "res://GodotBullet.gd"
+}, {
+"base": "Node2D",
+"class": "Test",
+"language": "GDScript",
+"path": "res://Test.gd"
+} ]
+_global_script_class_icons={
+"GodotBullet": "",
+"Test": ""
+}
+
+[application]
+
+config/name="GodotBulletWeb"
+run/main_scene="res://Test.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
